@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Clan Conquest</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🏰 Clan Conquest</h1>
+
+<div id="createClan">
+  <input id="clanName" placeholder="Clan Name">
+  <select id="raceSelect"></select>
+  <button onclick="createClan()">Create Clan</button>
+</div>
+
+<div id="game" style="display:none;">
+  <h2 id="clanInfo"></h2>
+
+  <h3>Races</h3>
+  <div id="characters"></div>
+
+  <h3>World Map</h3>
+  <div id="map"></div>
+
+  <h3>Log</h3>
+  <p id="log"></p>
+</div>
+
+<script src="races.js"></script>
+<script src="clans.js"></script>
+<script src="map.js"></script>
+<script src="battle.js"></script>
+<script src="ai.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
