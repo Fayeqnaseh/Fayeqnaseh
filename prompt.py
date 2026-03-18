@@ -4,8 +4,10 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, fil
 import requests
 
 # 🔑 تنظیمات
-BOT_TOKEN = "YOUR_BOT_TOKEN"
-OPENAI_API_KEY = "YOUR_API_KEY"
+import os
+
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 
 user_mode = {}
 
